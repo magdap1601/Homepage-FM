@@ -1,2 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: hsl(240, 100%, 5%);
+  background-color: hsl(36, 100%, 99%);
+}
+
+.navigation {
+  height: 6.7em;
+  height: 6.67em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.navigation__logo {
+  height: auto;
+  background-image: url("/images/logo.svg");
+}
+.navigation__block {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.navigation__list {
+  position: absolute;
+  right: 0;
+  top: 6.5em;
+  width: 60%;
+  padding: 0 1.6em;
+  padding-top: 2.66em;
+  height: 100vh;
+}
+.navigation__list::after {
+  content: "";
+  position: absolute;
+  left: -60%;
+  top: 0;
+  width: 60%;
+  height: 100vh;
+  background-color: hsl(240, 100%, 5%);
+  opacity: 0.2;
+}
+@media (min-width: 992px) {
+  .navigation__list::after {
+    display: none;
+  }
+}
+.navigation__list-link {
+  line-height: 2.6em;
+}
+.navigation__list-link:hover {
+  color: hsl(35, 77%, 62%);
+}
+@media (min-width: 992px) {
+  .navigation__list {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.navigation__input {
+  display: none;
+}
+.navigation__label {
+  height: 2em;
+  width: 2.7em;
+  background-image: url("/images/icon-menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+  .navigation__label {
+    display: none;
+  }
+}
+
+#toggle:not(:checked) ~ .navigation__list {
+  visibility: hidden;
+}
+@media (min-width: 992px) {
+  #toggle:not(:checked) ~ .navigation__list {
+    visibility: visible;
+  }
+}
+
+#toggle:checked ~ .navigation__list {
+  visibility: visible;
+}
+
+#toggle:checked + .navigation__label {
+  background-image: url("/images/icon-menu-close.svg");
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  padding: 2.4em 1.4em;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=main.css.map */

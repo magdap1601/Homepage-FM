@@ -1,7 +1,7 @@
-@import "/scss/abstracts/colors";
-@import "/scss/abstracts/variables";
-@import "/scss/base/basicStyles";
-@import "/scss/base/reset";
-@import "/scss/base/typography";
-@import "/scss/layout/";
-@import "/scss/layout/header";
+@import "./abstracts/colors";
+@import "./abstracts/variables";
+@import "./base/typography";
+@import "./base/reset";
+@import "./base/basicStyles";
+@import "./layout/header";
+@import "./componenets/container";
