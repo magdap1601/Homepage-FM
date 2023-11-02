@@ -190,10 +190,10 @@ p {
 }
 
 .card {
-  padding: 0 1.1em;
+  padding: 0 1em 1.5em 1em;
 }
 .card__header {
-  padding: 1.66em 0 0 0;
+  padding: 1.16em 0 0 0;
 }
 .card__header--orange {
   color: hsl(35, 77%, 62%);
@@ -205,18 +205,36 @@ p {
   color: hsl(35, 77%, 62%);
   cursor: pointer;
 }
+.card__header--grey {
+  color: hsl(233, 8%, 79%);
+}
+.card__header--medium {
+  font-size: 28px;
+}
 .card__paragraph {
-  padding: 0.33em 0 1.66em 0;
+  padding: 0.3em 0 1.26em 0;
 }
 .card__paragraph--grey {
   color: hsl(233, 8%, 79%);
-}
-.card__paragraph:last-of-type {
-  padding-bottom: 2.49em;
 }
 .card__line {
   width: 100%;
   height: 1px;
   background-color: hsl(233, 8%, 79%);
+}
+
+@media (min-width: 992px) {
+  .articles {
+    display: flex;
+  }
+}
+.articles__block {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.articles__img {
+  display: inline-block;
+  height: 9em;
 }
 /*# sourceMappingURL=main.css.map */

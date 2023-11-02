@@ -1,0 +1,15 @@
+.articles {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__img {
+    display: inline-block;
+    height: 9em;
+  }
+}

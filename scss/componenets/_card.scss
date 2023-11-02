@@ -1,7 +1,7 @@
 .card {
-  padding: 0 1.1em;
+  padding: 0 1em 1.5em 1em;
   &__header {
-    padding: 1.66em 0 0 0;
+    padding: 1.16em 0 0 0;
 
     &--orange {
       color: $color-softOrange;
@@ -13,14 +13,20 @@
         cursor: pointer;
       }
     }
+    &--grey {
+      color: $color-grayishBlue;
+    }
+    &--medium {
+      font-size: 28px;
+    }
   }
   &__paragraph {
-    padding: 0.33em 0 1.66em 0;
+    padding: 0.3em 0 1.26em 0;
     &--grey {
       color: $color-grayishBlue;
     }
     &:last-of-type {
-      padding-bottom: 2.49em;
+      // padding-bottom: 2.49em;
     }
   }
 
