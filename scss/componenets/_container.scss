@@ -3,4 +3,7 @@
   width: 100%;
   padding: 2.4em 1.4em;
   margin: 0 auto;
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 }

@@ -1,0 +1,49 @@
+.banner {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    padding-bottom: 4em;
+    @media (min-width: $tablet) {
+      padding: 0;
+      max-width: 65%;
+      margin-right: 20px;
+    }
+  }
+  &__content-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  &__content-info {
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__content-infoHeader {
+    max-width: 7em;
+  }
+  &__content-infoParagraph {
+    padding: 10px 0 15px;
+    @media (min-width: $tablet) {
+      max-width: 23.3em;
+    }
+  }
+  &__content-infoBtn {
+    display: inline-block;
+    padding: 10px 40px;
+    color: $color-offWhite;
+    background-color: $color-softRed;
+    &:hover {
+      background-color: $color-veryDarkBlue;
+      color: $color-offWhite;
+    }
+  }
+  //   article section
+
+  &__article-wrapper {
+    background-color: $color-veryDarkBlue;
+  }
+}

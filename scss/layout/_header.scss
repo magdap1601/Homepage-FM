@@ -6,6 +6,7 @@
   align-items: center;
   position: sticky;
   top: 0;
+  background-color: $color-offWhite;
   &__logo {
     height: auto;
     background-image: url("/images/logo.svg");
@@ -13,6 +14,7 @@
   &__block {
     display: flex;
     flex-direction: row-reverse;
+    width: 100%;
   }
   &__list {
     position: absolute;
@@ -22,15 +24,22 @@
     padding: 0 1.6em;
     padding-top: 2.66em;
     height: 100vh;
+    background-color: $color-offWhite;
+    @media (min-width: $tablet) {
+      height: 0;
+    }
+
     &::after {
       content: "";
       position: absolute;
-      left: -60%;
-      top: 0;
-      width: 60%;
+      left: -70%;
+      top: -6.5em;
+      width: 70%;
       height: 100vh;
-      background-color: $color-veryDarkBlue;
-      opacity: 0.2;
+      padding: 0;
+      background-color: $color-black;
+      opacity: 0.3;
+
       @media (min-width: $tablet) {
         display: none;
       }
