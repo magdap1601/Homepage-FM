@@ -20,7 +20,18 @@ Optimal layout for the interface depending on their device's screen size, using 
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Mobile:
+
+![](./img/1.jpg)
+
+Mobile menu:
+
+![](./img/2.jpg)
+
+Desktop:
+
+![](./img/3.jpg)
+
 
 
 ## My process
