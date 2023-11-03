@@ -2,6 +2,7 @@
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
   &__content {
     padding-bottom: 4em;
@@ -17,33 +18,40 @@
     height: auto;
   }
   &__content-info {
+    padding-top: 1.53em;
     @media (min-width: $tablet) {
       display: flex;
       justify-content: space-between;
+      padding-top: 2.5em;
     }
   }
   &__content-infoHeader {
     max-width: 7em;
+    font-size: 2.67em;
   }
   &__content-infoParagraph {
-    padding: 10px 0 15px;
     @media (min-width: $tablet) {
       max-width: 23.3em;
     }
   }
   &__content-infoBtn {
     display: inline-block;
-    padding: 10px 40px;
+    padding: 0.67em 2.67em;
     color: $color-offWhite;
     background-color: $color-softRed;
+    margin-top: 2em;
+    @media (min-width: $tablet) {
+      margin-top: 3em;
+    }
+
     &:hover {
       background-color: $color-veryDarkBlue;
       color: $color-offWhite;
     }
   }
   //   article section
-
-  &__article-wrapper {
+  &__article {
     background-color: $color-veryDarkBlue;
+    padding: 2.1em;
   }
 }

@@ -1,15 +1,23 @@
 .articles {
+  margin-top: 5.3em;
+  width: 100%;
   @media (min-width: $tablet) {
     display: flex;
+    margin-top: 0;
   }
   &__block {
     display: flex;
     align-items: center;
     width: 100%;
+    margin-top: 2em;
+
+    @media (min-width: $tablet) {
+      margin: 0;
+    }
   }
 
   &__img {
-    display: inline-block;
     height: 9em;
+    margin-right: 1.2em;
   }
 }
