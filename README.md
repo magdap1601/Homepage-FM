@@ -26,11 +26,11 @@ Mobile:
 
 Mobile menu:
 
-![](./img/2.jpg)
+![](./img/2.png)
 
 Desktop:
 
-![](./img/3.jpg)
+![](./img/3.png)
 
 
 
