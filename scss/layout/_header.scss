@@ -67,7 +67,7 @@
   &__label {
     height: 2em;
     width: 2.7em;
-    background-image: url("/images/icon-menu.svg");
+    background-image: url("../../images/icon-menu.svg");
     background-position: center;
     background-repeat: no-repeat;
     @media (min-width: $tablet) {
@@ -85,5 +85,5 @@
   visibility: visible;
 }
 #toggle:checked + .navigation__label {
-  background-image: url("/images/icon-menu-close.svg");
+  background-image: url("../../images/icon-menu-close.svg");
 }
